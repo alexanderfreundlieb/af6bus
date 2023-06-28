@@ -12,7 +12,7 @@
     "homepage": "https://alexanderfreundlieb.ch",
     "license": ["GPL-2.0-or-later"],
     "keywords": ["TYPO3 CMS"],
-	"version": "0.0.1",
+	"version": "0.1.0",
     "require": {
         "typo3/cms-core": "^12.4",
         "typo3/cms-rte-ckeditor": "^12.4",

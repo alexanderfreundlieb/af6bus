@@ -1,10 +1,10 @@
 <?php
 
 /**
- * Extension Manager/Repository config file for ext "sitepackage_alexander_freundlieb".
+ * Extension Manager/Repository config file for ext "af6bus".
  */
 $EM_CONF[$_EXTKEY] = [
-    'title' => 'Sitepackage Alexander Freundlieb',
+    'title' => 'af6bus',
     'description' => 'Sitepackage used for all websites developed by Alexander Freundlieb',
     'category' => 'templates',
     'constraints' => [
@@ -18,7 +18,7 @@ $EM_CONF[$_EXTKEY] = [
     ],
     'autoload' => [
         'psr-4' => [
-            'AlexanderFreundlieb\\SitepackageAlexanderFreundlieb\\' => 'Classes',
+            'AlexanderFreundlieb\\Af6bus\\' => 'Classes',
         ],
     ],
     'state' => 'stable',
@@ -28,5 +28,5 @@ $EM_CONF[$_EXTKEY] = [
     'author' => 'Alexander Freundlieb',
     'author_email' => 'alexander.freundlieb@icloud.com',
     'author_company' => 'Alexander Freundlieb',
-    'version' => '0.0.1',
+    'version' => '1.0.0',
 ];

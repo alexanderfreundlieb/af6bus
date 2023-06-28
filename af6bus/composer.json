@@ -1,10 +1,18 @@
 {
-    "name": "alexander-freundlieb/sitepackage-alexander-freundlieb",
+    "name": "alexander-freundlieb/af6bus",
     "type": "typo3-cms-extension",
     "description": "Sitepackage used for all websites developed by Alexander Freundlieb",
+	"authors": [
+		{
+			"name": "Alexander Freundlieb",
+			"role": "Developer",
+			"homepage": "https://alexanderfreundlieb.ch"
+		}
+	],
     "homepage": "https://alexanderfreundlieb.ch",
     "license": ["GPL-2.0-or-later"],
     "keywords": ["TYPO3 CMS"],
+	"version": "0.0.1",
     "require": {
         "typo3/cms-core": "^12.4",
         "typo3/cms-rte-ckeditor": "^12.4",
@@ -12,12 +20,12 @@
     },
     "autoload": {
         "psr-4": {
-            "AlexanderFreundlieb\\SitepackageAlexanderFreundlieb\\": "Classes/"
+            "AlexanderFreundlieb\\Af6bus\\": "Classes/"
         }
     },
     "extra": {
         "typo3/cms": {
-            "extension-key": "sitepackage_alexander_freundlieb"
+            "extension-key": "af6bus"
         }
     }
 }

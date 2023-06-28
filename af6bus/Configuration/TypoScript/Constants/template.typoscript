@@ -1,3 +1,6 @@
 homePid = 1
 baseURL = https://alexanderfreundlieb.ch/
 footerPid = 2
+
+cssBundlePath = ../local_packages/af6bus/Resources/Public/CSS/src/bundle.scss
+cssOutputPath = ../local_packages/af6bus/Resources/Public/CSS/dist/bundle.css

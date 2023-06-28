@@ -1,0 +1,40 @@
+page = PAGE
+page {
+  10 = FLUIDTEMPLATE
+  10 {
+    templateName = TEXT
+    templateName.stdWrap {
+      cObject = CASE
+      cObject {
+        key.data = pagelayout
+
+        1 = TEXT
+        1.value = Default
+        pagets__default = TEXT
+        pagets__default.value = Default
+
+        default = TEXT
+        default.value = Default
+      }
+    }
+    layoutRootPaths {
+      10 = EXT:af6bus/Resources/Private/Layouts/
+    }
+    templateRootPaths {
+      10 = EXT:af6bus/Resources/Private/Templates/
+    }
+    partialRootPaths {
+      10 = EXT:af6bus/Resources/Private/Partials/
+    }
+
+    variables {
+      siteName = TEXT
+      siteName.value = {siteLanguage:websiteTitle}
+      siteName.insertData = 1
+      homePid = TEXT
+      homePid.value = {$homePid}
+      footerPid = TEXT
+      footerPid.value = {$footerPid}
+    }
+  }
+}

@@ -1,0 +1,16 @@
+page.includeJSFooter {
+  custom = EXT:t8_custom/Resources/Public/JavaScript/custom.js
+}
+
+# remove default jquery
+page {
+  javascriptLibs {
+    jQuery >
+  }
+}
+
+page.includeJSLibs {
+  jquery = EXT:af6bus/Resources/Public/JavaScript/vendor/jquery-3.7.0.min.js
+  jquery.disableCompression = 1
+  jquery.forceOnTop = 1
+}

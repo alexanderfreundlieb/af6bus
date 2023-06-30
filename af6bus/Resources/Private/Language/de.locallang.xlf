@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+   <file source-language="en" datatype="plaintext" target-language="de" original="messages" date="2023-06-30T22:26:59Z" product-name="af6bus">
+      <header/>
+      <body>
+        <trans-unit id="backendlayouts.default.title">
+            <source>Default</source>
+            <target>Default</target>
+        </trans-unit>
+        <trans-unit id="backendlayouts.noBanner.title">
+            <source>No Banner</source>
+            <target>ohne Banner</target>
+        </trans-unit>
+		  <trans-unit id="backendlayouts.columns.header">
+			  <source>Header</source>
+			  <target>Header</target>
+		  </trans-unit>
+		  <trans-unit id="backendlayouts.columns.content">
+			  <source>Content</source>
+			  <target>Inhalt</target>
+		  </trans-unit>
+
+        <trans-unit id="grids.2col">
+            <source>2 Columns</source>
+            <target>2 Spalten</target>
+        </trans-unit>
+        <trans-unit id="grids.3col">
+            <source>3 Columns</source>
+            <target>3 Spalten</target>
+        </trans-unit>
+        <trans-unit id="grids.4col">
+            <source>4 Columns</source>
+            <target>4 Spalten</target>
+        </trans-unit>
+        <trans-unit id="grids.2col_3366">
+            <source>2 Columns (33% left, 66% right)</source>
+            <target>2 Spalten (33% Links, 66% Rechts)</target>
+        </trans-unit>
+        <trans-unit id="grids.2col_6633">
+            <source>2 Columns (66% left, 33% right)</source>
+            <target>2 Spalten (66% Links, 33% Rechts)</target>
+        </trans-unit>
+        <trans-unit id="grids.cols.1col">
+            <source>1. column</source>
+            <target>1. Spalte</target>
+        </trans-unit>
+        <trans-unit id="grids.cols.2col">
+            <source>2. column</source>
+            <target>2. Spalte</target>
+        </trans-unit>
+        <trans-unit id="grids.cols.3col">
+            <source>3. column</source>
+            <target>3. Spalte</target>
+        </trans-unit>
+        <trans-unit id="grids.cols.4col">
+            <source>4. column</source>
+            <target>4. Spalte</target>
+        </trans-unit>
+      </body>
+   </file>
+</xliff>

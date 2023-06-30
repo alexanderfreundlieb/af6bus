@@ -1,30 +1,40 @@
+lib.dynamicContent = COA
+lib.dynamicContent {
+  10 = LOAD_REGISTER
+  10.colPos.cObject = TEXT
+  10.colPos.cObject {
+    field = colPos
+    ifEmpty.cObject = TEXT
+    ifEmpty.cObject {
+      value.current = 1
+      ifEmpty = 0
+    }
+  }
+  20 = CONTENT
+  20 {
+    table = tt_content
+    select {
+      orderBy = sorting
+      where = {#colPos}={register:colPos}
+      where.insertData = 1
+    }
+  }
+  90 = RESTORE_REGISTER
+}
+
 page = PAGE
 page {
   10 = FLUIDTEMPLATE
   10 {
-    templateName = TEXT
-    templateName.stdWrap {
-      cObject = CASE
-      cObject {
-        key.data = pagelayout
-
-        1 = TEXT
-        1.value = Default
-        pagets__default = TEXT
-        pagets__default.value = Default
-
-        default = TEXT
-        default.value = Default
-      }
-    }
+    templateName = Default
     layoutRootPaths {
-      10 = EXT:af6bus/Resources/Private/Layouts/
+      0 = EXT:af6bus/Resources/Private/Layouts/
     }
     templateRootPaths {
-      10 = EXT:af6bus/Resources/Private/Templates/
+      0 = EXT:af6bus/Resources/Private/Templates/
     }
     partialRootPaths {
-      10 = EXT:af6bus/Resources/Private/Partials/
+      0 = EXT:af6bus/Resources/Private/Partials/
     }
 
     variables {

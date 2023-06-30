@@ -18,7 +18,8 @@
         "typo3/cms-rte-ckeditor": "^12.4",
         "typo3/cms-fluid-styled-content": "^12.4",
 		"wapplersystems/ws-scss": "^12.0",
-		"b13/container": "^2.2"
+		"b13/container": "^2.2",
+		"ichhabrecht/content-defender": "^3.2"
     },
     "autoload": {
         "psr-4": {

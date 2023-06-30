@@ -1,5 +1,5 @@
 page.includeJSFooter {
-  custom = EXT:t8_custom/Resources/Public/JavaScript/custom.js
+  custom = EXT:af6bus/Resources/Public/JavaScript/script.js
 }
 
 # remove default jquery

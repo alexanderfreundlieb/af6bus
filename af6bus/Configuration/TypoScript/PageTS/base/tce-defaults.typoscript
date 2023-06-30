@@ -1,8 +1,28 @@
+# Remove default backend layouts
 TCEFORM.pages {
   backend_layout_next_level {
     removeItems = -1, 0
   }
   backend_layout {
     removeItems = -1, 0
+  }
+}
+
+# Add banner element to content wizard
+mod.wizards.newContentElement.wizardItems {
+  // add the content element to the tab "common"
+  common {
+    elements {
+      af6bus_banner {
+        iconIdentifier = banner-icon
+        title = LLL:EXT:af6bus/Resources/Private/Language/locallang.xlf:tca.af6bus_banner.title
+        tt_content_defValues {
+          CType = af6bus_banner
+        }
+      }
+    }
+
+
+    show := addToList(af6bus_banner)
   }
 }

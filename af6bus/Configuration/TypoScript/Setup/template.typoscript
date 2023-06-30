@@ -26,7 +26,20 @@ page = PAGE
 page {
   10 = FLUIDTEMPLATE
   10 {
-    templateName = Default
+    template.stdWrap.cObject = CASE
+    template.stdWrap.cObject {
+      key.data = pagelayout
+
+      default = TEXT
+      default.value = EXT:af6bus/Resources/Private/Templates/Default.html
+
+      pagets__default = TEXT
+      pagets__default.value = EXT:af6bus/Resources/Private/Templates/Default.html
+
+      pagets__nobanner = TEXT
+      pagets__nobanner.value = EXT:af6bus/Resources/Private/Templates/NoBanner.html
+    }
+
     layoutRootPaths {
       0 = EXT:af6bus/Resources/Private/Layouts/
     }

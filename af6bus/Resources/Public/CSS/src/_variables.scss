@@ -1,0 +1,29 @@
+/* Fonts */
+// Multiple fonts:
+// $fonts: '//https://fonts.googleapis.com/css?family=Mulish', '//https://fonts.googleapis.com/css?family=Montserrat';
+$fonts: 'https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,600;1,400;1,600&display=swap';
+
+/* Colors */
+$black: #1D1D1F;
+$white: #F5F5F7;
+$primary: #E65F78;
+
+$error-color: $primary;
+
+/* Font styles */
+$font-family: 'Mulish', sans-serif;
+$font-weight-normal: 400;
+$font-weight-bold: 600;
+$font-size: 20px;
+$line-height: 1.5;
+$font-color: $black;
+
+/* Grid */
+$grid-max-width: 1400px;
+$grid-max-width-smaller: 1160px;
+$grid-gap: 40px;
+$break-point-xxl: 1400px;
+$break-point-xl: 1200px;
+$break-point-lg: 992px;
+$break-point-md: 786px;
+$break-point-sm: 567px;

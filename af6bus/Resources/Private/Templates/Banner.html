@@ -4,8 +4,26 @@
 <f:layout name="Default" />
 
 <f:section name="Main">
-
-    <div class="af6bus__banner">Text</div>
+    <div class="banner">
+        <f:if condition="{data.bodytext}">
+            <div class="banner__text">
+                <f:format.html>{data.bodytext}</f:format.html>
+            </div>
+        </f:if>
+        <f:if condition="{files}">
+            <div class="banner__image--wrap">
+                <f:for each="{files}" as="file">
+                    <f:image
+                        class="banner__image"
+                        image="{file}"
+                        maxWidth="2000"
+                        alt="{file.alternative}"
+                        treatIdAsReference="1"
+                        title="{file.title}" />
+                </f:for>
+            </div>
+        </f:if>
+    </div>
 
 </f:section>
 

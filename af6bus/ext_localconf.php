@@ -18,3 +18,7 @@ $iconRegistry->registerIcon(
     \TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
     ['source' => 'EXT:af6bus/Resources/Public/Icons/banner.svg']
 );
+
+/*RTE Configs */
+// register RTE config
+$GLOBALS['TYPO3_CONF_VARS']['RTE']['Presets']['af6busRTE'] = 'EXT:af6bus/Configuration/RTE/af6busRTE.yaml';

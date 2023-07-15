@@ -8,6 +8,9 @@ TCEFORM.pages {
   }
 }
 
+# Set RTE Config
+RTE.default.preset = af6busRTE
+
 # Add banner element to content wizard
 mod.wizards.newContentElement.wizardItems {
   // add the content element to the tab "common"

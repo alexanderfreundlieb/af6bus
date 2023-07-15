@@ -4,14 +4,18 @@
 <f:layout name="Default" />
 
 <f:section name="content">
+    <header class="header">
+        <f:render partial="Header/Navigation" arguments="{_all}"/>
+    </header>
+
     <main class="main">
         <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{colPos: '0'}" />
     </main>
 
-    <a href="#top" class="scroll--top"></span></a>
+    <a href="#top" class="button--top"></span></a>
 
     <footer class="footer">
-
+        <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{pid:footerPid}" />
     </footer>
 
 </f:section>

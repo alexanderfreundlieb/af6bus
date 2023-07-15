@@ -38,6 +38,8 @@ page {
       homePid.value = {$homePid}
       footerPid = TEXT
       footerPid.value = {$footerPid}
+      siteLogo = TEXT
+      siteLogo.value = {$siteLogo}
     }
   }
 }
@@ -61,6 +63,15 @@ lib.dynamicContent {
       orderBy = sorting
       where = {#colPos}={register:colPos}
       where.insertData = 1
+    }
+  }
+  30 = LOAD_REGISTER
+  30.pid.cObject = TEXT
+  30.pid.cObject {
+    field = pid
+    ifEmpty.cObject = TEXT
+    ifEmpty.cObject {
+      value.current = 1
     }
   }
   90 = RESTORE_REGISTER

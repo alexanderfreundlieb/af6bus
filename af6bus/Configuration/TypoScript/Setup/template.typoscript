@@ -2,6 +2,7 @@ page = PAGE
 page {
   10 = FLUIDTEMPLATE
   10 {
+    ### Templates ###
     templateName = TEXT
     templateName.stdWrap {
       cObject = CASE
@@ -20,6 +21,7 @@ page {
       }
     }
 
+    ### Root Paths ###
     layoutRootPaths {
       10 = EXT:af6bus/Resources/Private/Layouts/
     }
@@ -30,6 +32,7 @@ page {
       10 = EXT:af6bus/Resources/Private/Partials/
     }
 
+    ### Variables ###
     variables {
       siteName = TEXT
       siteName.value = {siteLanguage:websiteTitle}
@@ -40,6 +43,48 @@ page {
       footerPid.value = {$footerPid}
       siteLogo = TEXT
       siteLogo.value = {$siteLogo}
+    }
+
+    ### Data Processing ###
+    dataProcessing {
+      # Main Navigation
+      10 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+      10 {
+
+        levels = 1
+        as = navigation
+        expandAll = 1
+        titleField = nav_title // title
+
+        dataProcessing {
+          10 = files
+          10 {
+            references.fieldName = media
+          }
+        }
+      }
+
+      # Language Navigation
+      20 = TYPO3\CMS\Frontend\DataProcessing\LanguageMenuProcessor
+      20 {
+        languages = auto
+        as = navigationLanguage
+      }
+
+      # Meta Navigation
+      30 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+      30 {
+        special = directory
+        special.value = 4
+        as = navigationMeta
+
+        dataProcessing {
+          10 = files
+          10 {
+            references.fieldName = media
+          }
+        }
+      }
     }
   }
 }

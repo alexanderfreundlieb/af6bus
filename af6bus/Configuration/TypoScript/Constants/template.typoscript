@@ -1,6 +1,7 @@
 homePid = 1
 baseURL = https://alexanderfreundlieb.ch/
 footerPid = 2
+metaPid = 4
 siteLogo = EXT:af6bus/Resources/Public/Images/logo.svg
 
 cssBundlePath = EXT:af6bus/Resources/Public/CSS/src/bundle.scss

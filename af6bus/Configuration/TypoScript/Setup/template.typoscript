@@ -75,7 +75,7 @@ page {
       30 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
       30 {
         special = directory
-        special.value = 4
+        special.value = {$metaPid}
         as = navigationMeta
 
         dataProcessing {

@@ -47,3 +47,29 @@ $GLOBALS['TCA']['tt_content']['types']['af6bus_banner']['columnsOverrides'] = ar
         ]
     ],
 );
+
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns(
+    'tt_content',
+    [
+        'nav_use_subtitle' => [
+            'exclude' => 0,
+            'label' => 'LLL:EXT:af6bus/Resources/Private/Language/locallang.xlf:tca.af6bus_banner.nav_use_subtitle',
+            'config' => [
+                'type' => 'check',
+                'renderType' => 'checkboxToggle',
+                'items' => [
+                    [
+                        0 => '',
+                        1 => ''
+                    ]
+                ],
+            ],
+        ],
+    ]
+);
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addFieldsToPalette(
+    'tt_content',
+    'headers',
+    'nav_use_subtitle',
+    'after:subheader'
+);

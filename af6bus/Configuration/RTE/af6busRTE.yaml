@@ -12,6 +12,7 @@ editor:
         - { name: "Small", element: "small", classes: [] }
         - { name: "Muted", element: "span", classes: ['text-muted'] }
         - { name: 'Button', element: 'a', classes: ['button'] }
+        - { name: 'Wie Heading 1', element: 'h2', classes: ['heading--h1'] }
 
     heading:
       options:

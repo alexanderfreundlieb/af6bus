@@ -1,0 +1,28 @@
+lib.contentElement {
+  templateRootPaths {
+    100 = EXT:af6bus/Resources/Private/Extensions/fluid_styled_content/Templates/
+  }
+  partialRootPaths {
+    100 = EXT:af6bus/Resources/Private/Extensions/fluid_styled_content/Partials/
+  }
+  layoutRootPaths {
+    100 = EXT:af6bus/Resources/Private/Extensions/fluid_styled_content/Layouts/
+  }
+}
+
+## Banner-Template
+tt_content {
+  af6bus_banner =< lib.contentElement
+  af6bus_banner {
+    templateName = Banner
+
+    templateRootPaths.100 = EXT:af6bus/Resources/Private/Templates/
+
+    dataProcessing {
+      10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+      10 {
+        references.fieldName = assets
+      }
+    }
+  }
+}

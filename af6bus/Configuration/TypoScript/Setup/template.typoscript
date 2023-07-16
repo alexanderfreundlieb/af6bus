@@ -47,30 +47,30 @@ page {
 
     ### Data Processing ###
     dataProcessing {
-      # Main Navigation
-      10 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+      # Main Navigation - One Page Layout
+      10 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
       10 {
-
-        levels = 1
+        table = tt_content
+        pidInList.field = uid
+        where = sectionIndex = 1
         as = navigation
-        expandAll = 1
-        titleField = nav_title // title
-
-        dataProcessing {
-          10 = files
-          10 {
-            references.fieldName = media
-          }
-        }
       }
 
-      # Main Navigation - One Page Layout
-      #15 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+      # Main Navigation
+      #15 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
       #15 {
-      #  table = tt_content
-      #  pidInList.field = uid
-      #  where = sectionIndex = 1
+
+      #  levels = 1
       #  as = navigation
+      #  expandAll = 1
+      #  titleField = nav_title // title
+
+      #  dataProcessing {
+      #    10 = files
+      #    10 {
+      #      references.fieldName = media
+      #    }
+      #  }
       #}
 
       # Language Navigation
@@ -134,21 +134,4 @@ lib.dynamicContent {
   }
 
   90 = RESTORE_REGISTER
-}
-
-## Banner-Template
-tt_content {
-  af6bus_banner =< lib.contentElement
-  af6bus_banner {
-    templateName = Banner
-
-    templateRootPaths.100 = EXT:af6bus/Resources/Private/Templates/
-
-    dataProcessing {
-      10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
-      10 {
-        references.fieldName = assets
-      }
-    }
-  }
 }

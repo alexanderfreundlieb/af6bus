@@ -110,24 +110,29 @@ lib.dynamicContent {
       ifEmpty = 0
     }
   }
-  20 = CONTENT
-  20 {
-    table = tt_content
-    select {
-      orderBy = sorting
-      where = {#colPos}={register:colPos}
-      where.insertData = 1
-    }
-  }
-  30 = LOAD_REGISTER
-  30.pid.cObject = TEXT
-  30.pid.cObject {
+
+  20 = LOAD_REGISTER
+  20.pid.cObject = TEXT
+  20.pid.cObject {
     field = pid
     ifEmpty.cObject = TEXT
     ifEmpty.cObject {
       value.current = 1
     }
   }
+
+  30 = CONTENT
+  30 {
+    table = tt_content
+    select {
+      orderBy = sorting
+      pidInList = {register:pid}
+      pidInList.insertData = 1
+      where = colPos={register:colPos}
+      where.insertData = 1
+    }
+  }
+
   90 = RESTORE_REGISTER
 }
 

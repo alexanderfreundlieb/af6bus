@@ -48,20 +48,12 @@ page {
     ### Data Processing ###
     dataProcessing {
       # Main Navigation
-      10 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+      10 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
       10 {
-
-        levels = 1
+        table = tt_content
+        pidInList.field = uid
+        where = sectionIndex = 1
         as = navigation
-        expandAll = 1
-        titleField = nav_title // title
-
-        dataProcessing {
-          10 = files
-          10 {
-            references.fieldName = media
-          }
-        }
       }
 
       # Language Navigation

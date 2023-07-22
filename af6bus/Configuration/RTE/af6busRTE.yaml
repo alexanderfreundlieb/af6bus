@@ -9,10 +9,9 @@ editor:
     style:
       definitions:
         - { name: "Lead", element: "p", classes: ['lead'] }
-        - { name: "Small", element: "small", classes: [] }
-        - { name: "Muted", element: "span", classes: ['text-muted'] }
         - { name: 'Button', element: 'a', classes: ['button'] }
-        - { name: 'Wie Heading 1', element: 'h2', classes: ['heading--h1'] }
+        - { name: 'Like heading 1', element: 'h2', classes: ['heading--h1'] }
+        - { name: 'Primary color', element: 'p', classes: ['primary-color'] }
 
     heading:
       options:

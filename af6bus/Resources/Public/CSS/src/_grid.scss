@@ -19,3 +19,8 @@ $col100: 12;
         width: calc(100% / #{$col100} * #{$col})
     }
 }
+
+[class^="col"],
+[class*=" col"] {
+    padding: 0 calc(#{$grid-gap} / 2);
+}

@@ -1,25 +1,11 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
     <f:variable name="data-layout" value="default" />
 
-    <f:if condition="{data.CType} == 'af6bus_banner'">
-        <f:switch expression="{data.layout}">
-            <f:case value="100">
-                <f:variable name="data-layout" value="img-right" />
-            </f:case>
-            <f:case value="200">
-                <f:variable name="data-layout" value="img-left" />
-            </f:case>
-            <f:defaultCase>
-                <f:variable name="data-layout" value="default" />
-            </f:defaultCase>
-        </f:switch>
-    </f:if>
-
     <div
         data-ctype="{data.CType}"
         class="frame frame__{data.frame_class}
                frame__type--{data.CType}
-               frame__layout--{data-layout}
+               frame__layout--{data.layout}
                {f:if(condition: data.space_before_class, then: ' frame__space--before--{data.space_before_class}')}
                {f:if(condition: data.space_after_class, then: ' frame__space--after--{data.space_after_class}')}">
 

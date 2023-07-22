@@ -228,7 +228,37 @@ a {}
 /******************************************************
  * Banner
  ******************************************************/
-.banner {}
+.banner {
+    &__image {
+        width: 100%;
+        height: 65vh;
+        object-fit: cover;
+    }
+
+    &--default {
+        position: relative;
+
+        .banner {
+            &__text {
+                position: absolute;
+                bottom: 5em;
+                left: 1em;
+            }
+        }
+    }
+
+    &--img-right, &--img-left {
+        .content {
+            align-items: center;
+        }
+
+        .banner {
+            &__image {
+                height: auto;
+            }
+        }
+    }
+}
 
 /******************************************************
  * Footer

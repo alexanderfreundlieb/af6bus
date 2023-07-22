@@ -1,0 +1,26 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      data-namespace-typo3-fluid="true">
+
+    <div class="header__main">
+        <div class="header__logo">
+            <f:link.page pageUid="{homePid}" title="{siteName}" class="header__logo-link">
+                <img class="header__logo__img" src="{siteLogo}" alt="Logo {siteName}" />
+            </f:link.page>
+        </div>
+        <div class="navigation--wrap">
+            <div class="navigation__meta">
+                <f:render partial="Header/Navigation/Meta" arguments="{navigation:navigationMeta,pid:data.uid}" />
+                <div class="navigation__language">
+                    <f:render partial="Header/Navigation/Language" arguments="{navigation:navigationLanguage,pid:data.uid}" />
+                </div>
+            </div>
+            <div class="navigation__main">
+                <f:render partial="Header/Navigation/Main" arguments="{navigation:navigation,pid:data.uid,onePage:onePage}" />
+            </div>
+            <div class="navigation__mobile">
+                <f:render partial="Header/Navigation/Mobile" arguments="{navigation:navigation,pid:data.uid,onePage:onePage}" />
+            </div>
+        </div>
+    </div>
+
+</html>

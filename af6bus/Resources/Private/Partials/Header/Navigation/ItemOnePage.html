@@ -1,0 +1,21 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      data-namespace-typo3-fluid="true">
+
+<li class="navigation__item">
+    <f:link.typolink
+        parameter="#c{item.data.uid}"
+        title="{f:if(condition:'{item.data.nav_use_subtitle} == 0', then:' {item.data.header}', else:' {item.data.subheader}')}"
+        class="navigation__link">
+        <f:if condition="{item.files}">
+            <f:render partial="Header/Navigation/Image" arguments="{image:item.files.0}" />
+        </f:if>
+        <span class="navigation__text">
+            <f:if condition="{item.data.nav_use_subtitle} == 0">
+                <f:then>{item.data.header}</f:then>
+                <f:else>{item.data.subheader}</f:else>
+            </f:if>
+        </span>
+    </f:link.typolink>
+</li>
+
+</html>

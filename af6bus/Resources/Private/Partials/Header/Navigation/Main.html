@@ -1,0 +1,21 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      data-namespace-typo3-fluid="true">
+
+<f:if condition="{navigation}">
+    <nav class="navigation">
+        <ul class="navigation__list">
+            <f:for each="{navigation}" as="item">
+                <f:if condition="{onePage} == 'true'">
+                    <f:then>
+                        <f:render partial="Header/Navigation/ItemOnePage" arguments="{item:item}"/>
+                    </f:then>
+                    <f:else>
+                        <f:render partial="Header/Navigation/Item" arguments="{item:item,pid:pid}"/>
+                    </f:else>
+                </f:if>
+            </f:for>
+        </ul>
+    </nav>
+</f:if>
+
+</html>

@@ -1,7 +1,7 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
       data-namespace-typo3-fluid="true">
 
-<li class="navigation__item{f:if(condition:'{item.data.uid} == {pid} || {item.data.shortcut} == {pid} || {item.active} == 1', then:' navigation__item--active')}">
+<li class="navigation__item{f:if(condition:'{item.data.uid} == {pid} || {item.data.shortcut} == {pid} || {item.active} == 1', then:' navigation__item--active')}{f:if(condition:'{item.files}', then:' navigation__item--has-image')}">
     <f:if condition="{item.data.target}">
         <f:then>
             <f:link.page

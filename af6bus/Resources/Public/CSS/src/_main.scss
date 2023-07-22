@@ -1,4 +1,26 @@
 /******************************************************
+ * Imports
+ ******************************************************/
+@each $font in $fonts {
+    @import url($font);
+}
+
+/******************************************************
+ * Basis
+ ******************************************************/
+:root {
+    font-family: $font-family;
+    font-size: $font-size;
+    font-weight: $font-weight-normal;
+    line-height: $line-height;
+}
+
+body {
+    background-color: $background-color;
+    padding-top: $nav-height;
+}
+
+/******************************************************
  * Functional classes
  ******************************************************/
 .visuallyhidden {
@@ -42,7 +64,151 @@ a {}
 /******************************************************
  * Navigation
  ******************************************************/
-.navigation {}
+.header {
+    &__main {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: $background-color;
+        box-shadow: 0 0 5px 0 $gray;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: nowrap;
+        padding: 0 calc((100% - #{$grid-max-width} - #{$grid-gap}) / 2);
+        height: $nav-height;
+        z-index: $zIndex-7--nav;
+    }
+
+    &__logo {
+        padding: 0 calc(#{$grid-gap} / 2);
+
+        &__img {
+            width: 8em;
+        }
+    }
+}
+
+.navigation {
+    &--wrap {
+        padding: 0 calc(#{$grid-gap} / 2);
+    }
+
+    &__main {
+        font-size: 1.25em;
+        font-weight: $font-weight-bold;
+
+        .navigation {
+            &__list {
+                display: flex;
+
+                list-style: none;
+                padding: 0;
+                margin: 0 -0.6em;
+            }
+
+            &__link {
+                text-decoration: none;
+                color: $black;
+                transition: color .25s ease;
+                cursor: pointer;
+
+                &:hover, &--active {
+                    color: $primary;
+                }
+            }
+
+            &__text {
+                padding: 0 0.6em;
+            }
+
+            &__image {
+                max-width: 1em;
+                height: auto;
+            }
+        }
+    }
+
+    &__mobile {
+        display: none;
+    }
+
+    &__meta {
+        display: flex;
+        justify-content: flex-end;
+        margin: 0 -0.75em 1.1em;
+    }
+
+    &--meta, &--language {
+        padding: 0 0.75em;
+
+        .navigation {
+            &__list {
+                display: flex;
+
+                list-style: none;
+                padding: 0;
+            }
+
+            &__link {
+                text-decoration: none;
+                color: $black;
+                transition: color .25s ease;
+                cursor: pointer;
+
+                &:hover, &--active {
+                    color: $primary;
+                }
+            }
+
+            &__image {
+                max-width: 1em;
+                height: auto;
+            }
+        }
+    }
+
+    &--meta {
+        .navigation {
+            &__list {
+                margin: 0 -0.75em;
+            }
+
+            &__text {
+                padding: 0 0.75em;
+            }
+        }
+    }
+
+    &--language {
+        .navigation {
+            &__item {
+                + .navigation__item {
+                    .navigation__text {
+                        &::before {
+                            content: "|";
+                            padding: 0.2em;
+                        }
+                    }
+                }
+            }
+
+            &__text {
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    &__item {
+        &--has-image {
+            .navigation__link {
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+}
 
 /******************************************************
  * Banner

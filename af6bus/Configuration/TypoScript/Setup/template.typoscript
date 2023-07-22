@@ -43,6 +43,8 @@ page {
       footerPid.value = {$footerPid}
       siteLogo = TEXT
       siteLogo.value = {$siteLogo}
+      onePage = TEXT
+      onePage.value = {$onePage}
     }
 
     ### Data Processing ###

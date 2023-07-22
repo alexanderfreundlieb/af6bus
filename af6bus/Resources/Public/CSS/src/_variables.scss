@@ -1,7 +1,7 @@
 /* Fonts */
-// Multiple fonts:
-// $fonts: '//https://fonts.googleapis.com/css?family=Mulish', '//https://fonts.googleapis.com/css?family=Montserrat';
-$fonts: 'https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,700;1,400;1,700&display=swap';
+$fonts: 'https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,700;1,400;1,700&display=swap',
+        'https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&display=swap',
+        'https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap';
 
 /* Colors */
 $black: #1D1D1F;
@@ -16,6 +16,8 @@ $error-color: $primary;
 
 /* Font styles */
 $font-family: 'Mulish', sans-serif;
+$font-family-heading-1: 'Montserrat', sans-serif;
+$font-family-headings: 'Poppins', sans-serif;
 $font-weight-normal: 400;
 $font-weight-bold: 700;
 $font-size: 20px;

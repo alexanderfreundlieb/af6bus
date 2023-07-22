@@ -112,15 +112,45 @@ body {
 /******************************************************
  * Headings
  ******************************************************/
-h1 {}
+h1, .heading--h1,
+h2, .heading--h2,
+h3, .heading--h3,
+h4, .heading--h4,
+h5, .heading--h5, {
+    font-family: $font-family-headings;
+    font-weight: $font-weight-bold;
+    color: $black;
+}
 
-h2 {}
+h1,
+.heading--h1 {
+    font-family: $font-family-heading-1;
+    font-size: 3.25em;
+    margin-bottom: 0;
+}
 
-h3 {}
+h2,
+.heading--h2 {
+    font-size: 2.5em;
+    margin-bottom: 3rem;
+}
 
-h4 {}
+h3,
+.heading--h3 {
+    font-size: 1.5em;
+    color: $primary;
+    letter-spacing: 2px;
+    margin-bottom: 2rem;
+}
 
-h5 {}
+h4,
+.heading--h4 {
+    font-size: 1.25em;
+    margin-bottom: 1.5rem;
+}
+
+h5,
+.heading--h5 {}
 
 /******************************************************
  * Links

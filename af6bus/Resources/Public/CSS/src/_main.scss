@@ -27,6 +27,15 @@ body {
     margin: 0 auto;
 }
 
+.anchor {
+    position: relative;
+    display: block;
+    z-index: -10;
+    visibility: hidden;
+    pointer-events: none;
+    top: -$nav-height;
+}
+
 /******************************************************
  * Functional classes
  ******************************************************/
@@ -40,6 +49,11 @@ body {
     position: absolute;
     width: 1px
 }
+
+/******************************************************
+ * Section paddings
+ ******************************************************/
+
 
 /******************************************************
  * Headings

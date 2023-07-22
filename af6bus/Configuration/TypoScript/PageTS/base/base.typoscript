@@ -1,3 +1,4 @@
+### Backend layouts ###
 # Remove default backend layouts
 TCEFORM.pages {
   backend_layout_next_level {
@@ -8,6 +9,7 @@ TCEFORM.pages {
   }
 }
 
+### Defaults ###
 # Set default section index
 TCAdefaults.tt_content.sectionIndex = 0
 
@@ -28,14 +30,24 @@ TCEFORM.tt_content.layout {
   }
 }
 
-# Remove frame classes
+### Frame classes ###
+# Remove standard frame classes and add custom ones
 TCEFORM.tt_content.frame_class {
-  removeItems = none
+  removeItems = none, ruler-before, ruler-after, indent, indent-left, indent-right
+
+  types {
+    af6bus_banner.addItems {
+      img-right = Text left, image right
+      img-left = Text right, image left
+    }
+  }
 }
 
+### RTE ###
 # Set RTE Config
 RTE.default.preset = af6busRTE
 
+### Custom content elements ###
 # Add banner element to content wizard
 mod.wizards.newContentElement.wizardItems {
   // add the content element to the tab "common"

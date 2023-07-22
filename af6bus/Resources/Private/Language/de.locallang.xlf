@@ -61,6 +61,10 @@
 				<source>Banner</source>
 				<target>Banner</target>
 			</trans-unit>
+			<trans-unit id="tca.af6bus_banner.nav_use_subtitle">
+				<source>Use subtitle as nav title</source>
+				<target>Untertitel als Navigationstitel verwenden</target>
+			</trans-unit>
 		</body>
 	</file>
 </xliff>

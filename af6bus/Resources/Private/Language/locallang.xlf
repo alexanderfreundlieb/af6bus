@@ -47,6 +47,9 @@
 			<trans-unit id="tca.af6bus_banner.title">
 			    <source>Banner</source>
 			</trans-unit>
+			<trans-unit id="tca.af6bus_banner.nav_use_subtitle">
+				<source>Use subtitle as nav title</source>
+			</trans-unit>
 		</body>
 	</file>
 </xliff>

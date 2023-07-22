@@ -43,6 +43,25 @@ TCEFORM.tt_content.frame_class {
   }
 }
 
+### Space classes ###
+# Remove standard space classes and add custom ones
+TCEFORM.tt_content {
+  space_before_class {
+    removeItems = extra-small, medium, extra-large
+
+    addItems {
+      none = None
+    }
+  }
+  space_after_class {
+    removeItems = extra-small, medium, extra-large
+
+    addItems {
+      none = None
+    }
+  }
+}
+
 ### RTE ###
 # Set RTE Config
 RTE.default.preset = af6busRTE

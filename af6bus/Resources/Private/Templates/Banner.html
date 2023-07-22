@@ -4,27 +4,86 @@
 <f:layout name="Default" />
 
 <f:section name="Main">
-    <div class="banner">
-        <f:if condition="{data.bodytext}">
-            <div class="banner__text">
-                <f:format.html>{data.bodytext}</f:format.html>
-            </div>
-        </f:if>
-        <f:if condition="{files}">
-            <div class="banner__image--wrap">
-                <f:for each="{files}" as="file">
-                    <f:image
-                        class="banner__image"
-                        image="{file}"
-                        maxWidth="2000"
-                        alt="{file.alternative}"
-                        treatIdAsReference="1"
-                        title="{file.title}" />
-                </f:for>
-            </div>
-        </f:if>
+    <div class="banner banner--{data-layout}">
+        <f:render section="{data-layout}" arguments="{_all}" />
     </div>
 
+
+</f:section>
+
+<f:section name="default">
+    <f:if condition="{files}">
+        <div class="banner__image--wrap">
+            <f:for each="{files}" as="file">
+                <f:image
+                    class="banner__image"
+                    image="{file}"
+                    maxWidth="2000"
+                    alt="{file.alternative}"
+                    treatIdAsReference="1"
+                    title="{file.title}" />
+            </f:for>
+        </div>
+    </f:if>
+    <f:if condition="{data.bodytext}">
+        <div class="banner__text">
+            <f:format.html>{data.bodytext}</f:format.html>
+        </div>
+    </f:if>
+</f:section>
+
+<f:section name="img-right">
+    <div class="content content--wrap-reverse">
+        <div class="col8 col-medium-6 col-small-12">
+            <f:if condition="{data.bodytext}">
+                <div class="banner__text">
+                    <f:format.html>{data.bodytext}</f:format.html>
+                </div>
+            </f:if>
+        </div>
+        <div class="col4 col-medium-6 col-small-12">
+            <f:if condition="{files}">
+                <div class="banner__image--wrap">
+                    <f:for each="{files}" as="file">
+                        <f:image
+                            class="banner__image"
+                            image="{file}"
+                            maxWidth="2000"
+                            alt="{file.alternative}"
+                            treatIdAsReference="1"
+                            title="{file.title}" />
+                    </f:for>
+                </div>
+            </f:if>
+        </div>
+    </div>
+</f:section>
+
+<f:section name="img-left">
+    <div class="content">
+        <div class="col4 col-medium-6 col-small-12">
+            <f:if condition="{files}">
+                <div class="banner__image--wrap">
+                    <f:for each="{files}" as="file">
+                        <f:image
+                            class="banner__image"
+                            image="{file}"
+                            maxWidth="2000"
+                            alt="{file.alternative}"
+                            treatIdAsReference="1"
+                            title="{file.title}" />
+                    </f:for>
+                </div>
+            </f:if>
+        </div>
+        <div class="col8 col-medium-6 col-small-12">
+            <f:if condition="{data.bodytext}">
+                <div class="banner__text">
+                    <f:format.html>{data.bodytext}</f:format.html>
+                </div>
+            </f:if>
+        </div>
+    </div>
 </f:section>
 
 </html>

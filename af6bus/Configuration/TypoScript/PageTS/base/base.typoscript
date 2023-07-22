@@ -8,6 +8,31 @@ TCEFORM.pages {
   }
 }
 
+# Set default section index
+TCAdefaults.tt_content.sectionIndex = 0
+
+### Layouts ###
+# Layout numbers:
+# 1-99 Layouts for all types
+# 100 - 1000: Layouts for specific types
+
+# Remove standard layouts and add custom ones
+TCEFORM.tt_content.layout {
+  removeItems = 1, 2, 3
+
+  types {
+    af6bus_banner.addItems {
+      100 = Text left, image right
+      200 = Text right, image left
+    }
+  }
+}
+
+# Remove frame classes
+TCEFORM.tt_content.frame_class {
+  removeItems = none
+}
+
 # Set RTE Config
 RTE.default.preset = af6busRTE
 

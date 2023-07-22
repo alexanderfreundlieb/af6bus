@@ -6,17 +6,23 @@
 <f:section name="content">
     <header class="header">
         <f:render partial="Header/Navigation" arguments="{_all}"/>
-        <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{colPos: '100'}" />
+        <div class="container">
+            <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{colPos: '100'}" />
+        </div>
     </header>
 
     <main class="main">
-        <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{colPos: '0'}" />
+        <div class="container">
+            <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{colPos: '0'}" />
+        </div>
     </main>
 
     <a href="#top" class="button--top"></span></a>
 
     <footer class="footer">
-        <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{pid:footerPid}" />
+        <div class="container">
+            <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{pid:footerPid}" />
+        </div>
     </footer>
 
 </f:section>

@@ -20,6 +20,13 @@ body {
     padding-top: $nav-height;
 }
 
+.container {
+    max-width: $grid-max-width;
+    box-sizing: content-box;
+    padding: 0 calc(#{$grid-gap} / 2);
+    margin: 0 auto;
+}
+
 /******************************************************
  * Functional classes
  ******************************************************/

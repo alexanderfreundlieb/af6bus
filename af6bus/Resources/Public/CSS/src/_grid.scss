@@ -24,3 +24,19 @@ $col100: 12;
 [class*=" col"] {
     padding: 0 calc(#{$grid-gap} / 2);
 }
+
+@media (max-width: $break-point-lg) {
+    @each $col in $cols {
+        .col-medium-#{$col} {
+            width: calc(100% / #{$col100} * #{$col})
+        }
+    }
+}
+
+@media (max-width: $break-point-md) {
+    @each $col in $cols {
+        .col-small-#{$col} {
+            width: calc(100% / #{$col100} * #{$col})
+        }
+    }
+}

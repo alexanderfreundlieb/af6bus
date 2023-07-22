@@ -53,7 +53,61 @@ body {
 /******************************************************
  * Section paddings
  ******************************************************/
+@mixin sectionPaddings($default, $none, $small, $large) {
+    .main .container > .frame,
+    .footer .container > .frame {
+        padding-top: $default;
+        padding-bottom: $default;
 
+        &.frame__space {
+            &--before--large {
+                padding-top: $large;
+            }
+            &--before--small {
+                padding-top: $small;
+            }
+            &--before--none {
+                padding-top: $none;
+            }
+
+            &--after--large {
+                padding-bottom: $large;
+            }
+            &--after--small {
+                padding-bottom: $small;
+            }
+            &--after--none {
+                padding-bottom: $none;
+            }
+        }
+    }
+
+    .main .container > .frame {
+        &:first-child {
+            padding-top: calc(#{$default} * 2);
+        }
+
+        &.frame__space {
+            &--before--large {
+                &:first-child {
+                    padding-top: calc(#{$large} * 2);
+                }
+            }
+
+            &--before--small {
+                &:first-child {
+                    padding-top: calc(#{$small} * 2);
+                }
+            }
+            &--before--none {
+                &:first-child {
+                    padding-top: $none;
+                }
+            }
+        }
+    }
+}
+@include sectionPaddings(2.5em, 0, 1.5em, 5em);
 
 /******************************************************
  * Headings

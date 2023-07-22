@@ -207,6 +207,14 @@ a {}
                 align-items: center;
             }
         }
+
+        &--disabled {
+            color: $gray-brighter;
+
+            .navigation__text::before {
+                color: $black;
+            }
+        }
     }
 }
 

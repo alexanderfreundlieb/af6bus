@@ -1,8 +1,29 @@
 /******************************************************
- * Imports
+ * Various functions
  ******************************************************/
 @each $font in $fonts {
     @import url($font);
+}
+
+@each $background-class, $background-color in $background-colors {
+    .background--#{$background-class} {
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            top: 0;
+            width: 100vw;
+            background-color: $background-color;
+            left: calc((100vw - 100%) / 2 * -1);
+        }
+
+        > * {
+            position: relative;
+            z-index: $zIndex-1--foreground;
+        }
+    }
 }
 
 /******************************************************
@@ -16,8 +37,9 @@
 }
 
 body {
-    background-color: $background-color;
+    background-color: $main-background;
     padding-top: $nav-height;
+    overflow-x: hidden;
 }
 
 .container {
@@ -179,7 +201,7 @@ a {}
         top: 0;
         left: 0;
         right: 0;
-        background-color: $background-color;
+        background-color: $main-background;
         box-shadow: 0 0 5px 0 $gray;
         display: flex;
         justify-content: space-between;
@@ -318,7 +340,7 @@ a {}
         }
 
         &--disabled {
-            color: $gray-brighter;
+            color: $gray-medium;
 
             .navigation__text::before {
                 color: $black;

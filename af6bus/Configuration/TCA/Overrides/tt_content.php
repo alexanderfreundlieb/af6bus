@@ -65,6 +65,19 @@ $GLOBALS['TCA']['tt_content']['types']['af6bus_banner']['columnsOverrides'] = ar
                 ],
             ],
         ],
+        'background' => [
+            'exclude' => 0,
+            'label' => 'LLL:EXT:af6bus/Resources/Private/Language/locallang.xlf:tca.af6bus.background',
+            'config' => [
+                'type' => 'select',
+                'renderType' => 'selectSingle',
+                'items' => [
+                    [
+                        'label' => 'LLL:EXT:af6bus/Resources/Private/Language/locallang.xlf:tca.af6bus.background.none', 'value' => 'none',
+                    ]
+                ],
+            ],
+        ],
     ]
 );
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addFieldsToPalette(
@@ -72,4 +85,10 @@ $GLOBALS['TCA']['tt_content']['types']['af6bus_banner']['columnsOverrides'] = ar
     'headers',
     'nav_use_subtitle',
     'after:subheader'
+);
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addFieldsToPalette(
+    'tt_content',
+    'frames',
+    '--linebreak--,background',
+    'after:space_after_class'
 );

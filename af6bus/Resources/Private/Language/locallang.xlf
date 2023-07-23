@@ -50,6 +50,19 @@
 			<trans-unit id="tca.af6bus_banner.nav_use_subtitle">
 				<source>Use subtitle as nav title</source>
 			</trans-unit>
+
+			<trans-unit id="tca.af6bus.background">
+				<source>Background</source>
+			</trans-unit>
+			<trans-unit id="tca.af6bus.background.none">
+				<source>No background</source>
+			</trans-unit>
+			<trans-unit id="tca.af6bus.background.gray">
+				<source>Gray background</source>
+			</trans-unit>
+			<trans-unit id="tca.af6bus.background.black">
+				<source>Black background</source>
+			</trans-unit>
 		</body>
 	</file>
 </xliff>

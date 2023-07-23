@@ -62,6 +62,16 @@ TCEFORM.tt_content {
   }
 }
 
+### Background ###
+TCEFORM.tt_content {
+  background {
+    addItems {
+      black = LLL:EXT:af6bus/Resources/Private/Language/locallang.xlf:tca.af6bus.background.black
+      gray = LLL:EXT:af6bus/Resources/Private/Language/locallang.xlf:tca.af6bus.background.gray
+    }
+  }
+}
+
 ### RTE ###
 # Set RTE Config
 RTE.default.preset = af6busRTE

@@ -65,6 +65,23 @@
 				<source>Use subtitle as nav title</source>
 				<target>Untertitel als Navigationstitel verwenden</target>
 			</trans-unit>
+
+			<trans-unit id="tca.af6bus.background">
+				<source>Background</source>
+				<target>Hintergrund</target>
+			</trans-unit>
+			<trans-unit id="tca.af6bus.background.none">
+				<source>No background</source>
+				<target>Kein Hintergrund</target>
+			</trans-unit>
+			<trans-unit id="tca.af6bus.background.gray">
+				<source>Gray background</source>
+				<target>Grauer Hintergrund</target>
+			</trans-unit>
+			<trans-unit id="tca.af6bus.background.black">
+				<source>Black background</source>
+				<target>Schwarzer Hintergrund</target>
+			</trans-unit>
 		</body>
 	</file>
 </xliff>

@@ -82,6 +82,44 @@
 				<source>Black background</source>
 				<target>Schwarzer Hintergrund</target>
 			</trans-unit>
+
+			<trans-unit id="tca.container.2col">
+				<source>2 columns</source>
+				<target>2 Spalten</target>
+			</trans-unit>
+			<trans-unit id="tca.container.2col3366">
+				<source>2 columns - left 33%, right 66%</source>
+				<target>2 Spalten - links 33%, rechts 66%</target>
+			</trans-unit>
+			<trans-unit id="tca.container.2col6633">
+				<source>2 columns - left 66%, right 33%</source>
+				<target>2 Spalten - links 66%, rechts 33%</target>
+			</trans-unit>
+			<trans-unit id="tca.container.3col">
+				<source>3 columns</source>
+				<target>3 Spalten</target>
+			</trans-unit>
+			<trans-unit id="tca.container.4col">
+				<source>4 columns</source>
+				<target>4 Spalten</target>
+			</trans-unit>
+
+			<trans-unit id="tca.container.cols.first">
+				<source>First column</source>
+				<target>Erste Spalte</target>
+			</trans-unit>
+			<trans-unit id="tca.container.cols.second">
+				<source>Second column</source>
+				<target>Zweite Spalte</target>
+			</trans-unit>
+			<trans-unit id="tca.container.cols.third">
+				<source>Third column</source>
+				<target>Dritte Spalte</target>
+			</trans-unit>
+			<trans-unit id="tca.container.cols.fourth">
+				<source>Fourth column</source>
+				<target>Vierte Spalte</target>
+			</trans-unit>
 		</body>
 	</file>
 </xliff>

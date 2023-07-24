@@ -63,6 +63,35 @@
 			<trans-unit id="tca.af6bus.background.black">
 				<source>Black background</source>
 			</trans-unit>
+
+			<trans-unit id="tca.container.2col">
+				<source>2 columns</source>
+			</trans-unit>
+			<trans-unit id="tca.container.2col3366">
+				<source>2 columns - left 33%, right 66%</source>
+			</trans-unit>
+			<trans-unit id="tca.container.2col6633">
+				<source>2 columns - left 66%, right 33%</source>
+			</trans-unit>
+			<trans-unit id="tca.container.3col">
+				<source>3 columns</source>
+			</trans-unit>
+			<trans-unit id="tca.container.4col">
+				<source>4 columns</source>
+			</trans-unit>
+
+			<trans-unit id="tca.container.cols.first">
+				<source>First column</source>
+			</trans-unit>
+			<trans-unit id="tca.container.cols.second">
+				<source>Second column</source>
+			</trans-unit>
+			<trans-unit id="tca.container.cols.third">
+				<source>Third column</source>
+			</trans-unit>
+			<trans-unit id="tca.container.cols.fourth">
+				<source>Fourth column</source>
+			</trans-unit>
 		</body>
 	</file>
 </xliff>

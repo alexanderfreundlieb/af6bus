@@ -48,6 +48,7 @@ $GLOBALS['TCA']['tt_content']['types']['af6bus_banner']['columnsOverrides'] = ar
     ],
 );
 
+// Add custom fields
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns(
     'tt_content',
     [
@@ -91,4 +92,103 @@ $GLOBALS['TCA']['tt_content']['types']['af6bus_banner']['columnsOverrides'] = ar
     'frames',
     '--linebreak--,background',
     'after:space_after_class'
+);
+
+/*** Container ***/
+/* 2 Col */
+\TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\B13\Container\Tca\Registry::class)->configureContainer(
+    (
+        new \B13\Container\Tca\ContainerConfiguration(
+            'af6bus_2col', // CType
+            'LLL:EXT:af6bus/Resources/Private/Language/locallang.xlf:tca.container.2col', // label
+            '', // description
+            [
+                [
+                    ['name' => 'LLL:EXT:af6bus/Resources/Private/Language/locallang.xlf:tca.container.cols.first', 'colPos' => 101],
+                    ['name' => 'LLL:EXT:af6bus/Resources/Private/Language/locallang.xlf:tca.container.cols.second', 'colPos' => 102]
+                ]
+            ] // grid configuration
+        )
+    )
+    // set an optional icon configuration
+    ->setIcon('EXT:container/Resources/Public/Icons/container-2col.svg')
+);
+
+/* 2 Col 33 left, 66 right */
+\TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\B13\Container\Tca\Registry::class)->configureContainer(
+    (
+        new \B13\Container\Tca\ContainerConfiguration(
+            'af6bus_2col3366', // CType
+            'LLL:EXT:af6bus/Resources/Private/Language/locallang.xlf:tca.container.2col3366', // label
+            '', // description
+            [
+                [
+                    ['name' => 'LLL:EXT:af6bus/Resources/Private/Language/locallang.xlf:tca.container.cols.first', 'colPos' => 101],
+                    ['name' => 'LLL:EXT:af6bus/Resources/Private/Language/locallang.xlf:tca.container.cols.second', 'colPos' => 102]
+                ]
+            ] // grid configuration
+        )
+    )
+    // set an optional icon configuration
+    ->setIcon('EXT:container/Resources/Public/Icons/container-2col-right.svg')
+);
+
+/* 2 Col 66 left, 33 right */
+\TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\B13\Container\Tca\Registry::class)->configureContainer(
+    (
+        new \B13\Container\Tca\ContainerConfiguration(
+            'af6bus_2col6633', // CType
+            'LLL:EXT:af6bus/Resources/Private/Language/locallang.xlf:tca.container.2col6633', // label
+            '', // description
+            [
+                [
+                    ['name' => 'LLL:EXT:af6bus/Resources/Private/Language/locallang.xlf:tca.container.cols.first', 'colPos' => 101],
+                    ['name' => 'LLL:EXT:af6bus/Resources/Private/Language/locallang.xlf:tca.container.cols.second', 'colPos' => 102]
+                ]
+            ] // grid configuration
+        )
+    )
+    // set an optional icon configuration
+    ->setIcon('EXT:container/Resources/Public/Icons/container-2col-left.svg')
+);
+
+/* 3 Col */
+\TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\B13\Container\Tca\Registry::class)->configureContainer(
+        (
+        new \B13\Container\Tca\ContainerConfiguration(
+            'af6bus_3col', // CType
+            'LLL:EXT:af6bus/Resources/Private/Language/locallang.xlf:tca.container.3col', // label
+            '', // description
+            [
+                [
+                    ['name' => 'LLL:EXT:af6bus/Resources/Private/Language/locallang.xlf:tca.container.cols.first', 'colPos' => 101],
+                    ['name' => 'LLL:EXT:af6bus/Resources/Private/Language/locallang.xlf:tca.container.cols.second', 'colPos' => 102],
+                    ['name' => 'LLL:EXT:af6bus/Resources/Private/Language/locallang.xlf:tca.container.cols.third', 'colPos' => 103]
+                ]
+            ] // grid configuration
+        )
+    )
+    // set an optional icon configuration
+    ->setIcon('EXT:container/Resources/Public/Icons/container-3col.svg')
+);
+
+/* 2 Col */
+\TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\B13\Container\Tca\Registry::class)->configureContainer(
+    (
+        new \B13\Container\Tca\ContainerConfiguration(
+            'af6bus_4col', // CType
+            'LLL:EXT:af6bus/Resources/Private/Language/locallang.xlf:tca.container.4col', // label
+            '', // description
+            [
+                [
+                    ['name' => 'LLL:EXT:af6bus/Resources/Private/Language/locallang.xlf:tca.container.cols.first', 'colPos' => 101],
+                    ['name' => 'LLL:EXT:af6bus/Resources/Private/Language/locallang.xlf:tca.container.cols.second', 'colPos' => 102],
+                    ['name' => 'LLL:EXT:af6bus/Resources/Private/Language/locallang.xlf:tca.container.cols.third', 'colPos' => 103],
+                    ['name' => 'LLL:EXT:af6bus/Resources/Private/Language/locallang.xlf:tca.container.cols.fourth', 'colPos' => 104]
+                ]
+            ] // grid configuration
+        )
+    )
+    // set an optional icon configuration
+    ->setIcon('EXT:container/Resources/Public/Icons/container-4col.svg')
 );

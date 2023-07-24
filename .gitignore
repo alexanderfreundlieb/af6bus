@@ -13,6 +13,7 @@ nbproject
 .webprj
 *.code
 *.code-*
+*.iml
 # ignore directories starting with ., fileadmin, typo3, typo3_src, typo3temp, uploads
 /.*/*
 #

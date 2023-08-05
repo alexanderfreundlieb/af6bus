@@ -5,20 +5,20 @@ This sitepackage is used as a base for all TYPO3 websites developed by Alexander
 Any custom modifications should be made in the extension *af6passenger* to maintain
 updatability of this extension.
 
-## Version compatibility
+## <a name="compatibility"></a>Version compatibility
 | AF6Bus Version | TYPO3 Version |
 |----------------|---------------|
 | ^1.0.0         | ^12.4         |
 
-## Dependencies
+## <a name="dependencies"></a>Dependencies
 | Dependency       | Version |
 |------------------|---------|
 | WS SCSS          | ^12.0   |
 | Container        | ^2.2    |
 | Content defender | ^3.2    |
 
-## Installation
-* Download the [latest version](https://github.com/alexanderfreundlieb/sitepackage_af/releases)
+## <a name="installation"></a>Installation
+* Download the [latest version](https://github.com/alexanderfreundlieb/af6bus/releases)
 of this extension as well as [af6passenger](https://github.com/alexanderfreundlieb/af6passenger/releases)
 and unzip the files. 
 * In your TYPO3 installation, create a new folder called `packages` in your root directory

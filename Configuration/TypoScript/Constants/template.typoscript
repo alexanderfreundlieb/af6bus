@@ -13,5 +13,5 @@ plugin.af6bus {
   baseURL = https://alexanderfreundlieb.ch/
 }
 
-cssBundlePath = EXT:af6bus/Resources/Public/CSS/src/bundle.scss
-cssOutputPath = EXT:af6bus/Resources/Public/CSS/dist/bundle.css
+cssBundlePath = EXT:af6passenger/Resources/Public/CSS/src/bundle.scss
+cssOutputPath = EXT:af6passenger/Resources/Public/CSS/dist/bundle.css

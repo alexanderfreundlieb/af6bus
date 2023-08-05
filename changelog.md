@@ -8,4 +8,5 @@ Changelog
 [05.08.2023][chore] Move custom JavaScript to EXT:af6passenger
 [05.08.2023][chore] Move certain pagets configurations to EXT:af6passenger
 [05.08.2023][chore] Move main RTE config to EXT:af6passenger
+[05.08.2023][chore] Move certain CSS to EXT:af6passenger
 ```

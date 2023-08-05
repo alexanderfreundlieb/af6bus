@@ -36,3 +36,6 @@ and move the two extensions inside it.
 `composer install alexander-freundlieb/af6passenger:@dev`
 * Include the TypoScript in your TYPO3 Installation
 * Set the needed TypoScript constants
+
+## TODO
+[ ] Change Navigation depending on what constant is set for onePage

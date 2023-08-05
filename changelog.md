@@ -1,12 +1,13 @@
 Changelog
 ==============================================================
-## Version 2.0.1 - 5th August 2023
+## Version 2.0.1 - 6th August 2023
 This version contains some minor bug fixes. See below for a full list
 of all changes.
 
 ### All changes
 ```
 [05.08.2023][fix] Set correct type for onepage constant
+[06.08.2023][chore] Remove custom layouts
 ```
 
 ## Version 2.0.0 - 5th August 2023

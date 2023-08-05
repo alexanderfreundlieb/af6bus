@@ -1,5 +1,14 @@
 Changelog
 ==============================================================
+## Version 2.0.1 - 5th August 2023
+This version contains some minor bug fixes. See below for a full list
+of all changes.
+
+### All changes
+```
+[05.08.2023][fix] Set correct type for onepage constant
+```
+
 ## Version 2.0.0 - 5th August 2023
 ### Updatability
 In version 2.0.0 a lot of code was moved over to [EXT:af6passenger](https://github.com/alexanderfreundlieb/af6passenger), 

@@ -25,4 +25,4 @@ if you plan on both using this extension as well as [af6passenger](https://githu
 * Set the needed TypoScript constants
 
 ## TODO
-[ ] Banner backend preview
+- [ ] Banner backend preview

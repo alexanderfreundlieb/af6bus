@@ -38,13 +38,13 @@ page {
       siteName.value = {siteLanguage:websiteTitle}
       siteName.insertData = 1
       homePid = TEXT
-      homePid.value = {$homePid}
+      homePid.value = {$plugin.af6bus.homePid}
       footerPid = TEXT
-      footerPid.value = {$footerPid}
+      footerPid.value = {$plugin.af6bus.footerPid}
       siteLogo = TEXT
-      siteLogo.value = {$siteLogo}
+      siteLogo.value = {$plugin.af6bus.siteLogo}
       onePage = TEXT
-      onePage.value = {$onePage}
+      onePage.value = {$plugin.af6bus.onePage}
     }
 
     ### Data Processing ###

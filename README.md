@@ -38,4 +38,4 @@ and move the two extensions inside it.
 * Set the needed TypoScript constants
 
 ## TODO
-[ ] Add back to top button
+[ ] Banner backend preview

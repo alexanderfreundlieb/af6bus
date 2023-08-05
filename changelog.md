@@ -7,6 +7,7 @@ of all changes.
 ### All changes
 ```
 [05.08.2023][fix] Set correct type for onepage constant
+[06.08.2023][feat] Add smooth scrolling
 [06.08.2023][chore] Remove custom layouts
 ```
 
@@ -29,5 +30,4 @@ do it manually for each and every website.
 [05.08.2023][chore] Move main RTE config to EXT:af6passenger
 [05.08.2023][chore] Move certain CSS to EXT:af6passenger
 [05.08.2023][chore] Update version number
-[05.08.2023][feat] Add smooth scrolling
 ```

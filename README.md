@@ -38,4 +38,4 @@ and move the two extensions inside it.
 * Set the needed TypoScript constants
 
 ## TODO
-[ ] Change Navigation depending on what constant is set for onePage
+[ ] Add back to top button

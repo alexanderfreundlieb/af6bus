@@ -24,12 +24,15 @@ page {
     ### Root Paths ###
     layoutRootPaths {
       10 = EXT:af6bus/Resources/Private/Layouts/
+      20 = EXT:af6passenger/Resources/Private/Layouts/
     }
     templateRootPaths {
       10 = EXT:af6bus/Resources/Private/Templates/
+      20 = EXT:af6passenger/Resources/Private/Templates/
     }
     partialRootPaths {
       10 = EXT:af6bus/Resources/Private/Partials/
+      20 = EXT:af6passenger/Resources/Private/Partials/
     }
 
     ### Variables ###
@@ -45,57 +48,6 @@ page {
       siteLogo.value = {$plugin.af6bus.siteLogo}
       onePage = TEXT
       onePage.value = {$plugin.af6bus.onePage}
-    }
-
-    ### Data Processing ###
-    dataProcessing {
-      # Main Navigation - One Page Layout
-      10 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
-      10 {
-        table = tt_content
-        pidInList.field = uid
-        where = sectionIndex = 1
-        as = navigation
-      }
-
-      # Main Navigation
-      #15 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
-      #15 {
-
-      #  levels = 1
-      #  as = navigation
-      #  expandAll = 1
-      #  titleField = nav_title // title
-
-      #  dataProcessing {
-      #    10 = files
-      #    10 {
-      #      references.fieldName = media
-      #    }
-      #  }
-      #}
-
-      # Language Navigation
-      20 = TYPO3\CMS\Frontend\DataProcessing\LanguageMenuProcessor
-      20 {
-        languages = auto
-        as = navigationLanguage
-      }
-
-      # Meta Navigation
-      30 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
-      30 {
-        special = directory
-        special.value = {$metaPid}
-        as = navigationMeta
-
-        dataProcessing {
-          10 = files
-          10 {
-            references.fieldName = media
-          }
-        }
-      }
     }
   }
 }

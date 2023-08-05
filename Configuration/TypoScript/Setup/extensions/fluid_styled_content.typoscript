@@ -1,12 +1,15 @@
 lib.contentElement {
   templateRootPaths {
     100 = EXT:af6bus/Resources/Private/Extensions/fluid_styled_content/Templates/
+    200 = EXT:af6passenger/Resources/Private/Extensions/fluid_styled_content/Templates/
   }
   partialRootPaths {
     100 = EXT:af6bus/Resources/Private/Extensions/fluid_styled_content/Partials/
+    200 = EXT:af6passenger/Resources/Private/Extensions/fluid_styled_content/Partials/
   }
   layoutRootPaths {
     100 = EXT:af6bus/Resources/Private/Extensions/fluid_styled_content/Layouts/
+    200 = EXT:af6passenger/Resources/Private/Extensions/fluid_styled_content/Layouts/
   }
 }
 
@@ -16,7 +19,10 @@ tt_content {
   af6bus_banner {
     templateName = Banner
 
-    templateRootPaths.100 = EXT:af6bus/Resources/Private/Templates/
+    templateRootPaths {
+      100 = EXT:af6bus/Resources/Private/Templates/
+      200 = EXT:af6passenger/Resources/Private/Templates
+    }
 
     dataProcessing {
       10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor

@@ -18,8 +18,21 @@ updatability of this extension.
 | Content defender | ^3.2    |
 
 ## Installation
-*Coming soon*
-
-## TODO
-- [ ] Create af6passenger extension & integrate it
-- [ ] Installation guide
+* Download the [latest version](https://github.com/alexanderfreundlieb/af6bus/releases)
+of this extension as well as [af6passenger](https://github.com/alexanderfreundlieb/af6passenger/releases)
+and unzip the files. 
+* In your TYPO3 installation, create a new folder called `packages` in your root directory
+and move the two extensions inside it.
+* Update your `composer.json` with the following code:
+```
+"repositories": [
+    {
+        "type": "path",
+        "url": "./packages/*/"
+    }
+]
+```
+* Run `composer install alexander-freundlieb/af6bus:@dev` and
+`composer install alexander-freundlieb/af6passenger:@dev`
+* Include the TypoScript in your TYPO3 Installation
+* Set the needed TypoScript constants

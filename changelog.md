@@ -1,2 +1,22 @@
 Changelog
 ==============================================================
+## Version 2.0.0 - 5th August 2023
+### Updatability
+In version 2.0.0 a lot of code was moved over to [EXT:af6passenger](https://github.com/alexanderfreundlieb/af6passenger), 
+to allow for better updatability of this extension. The main thought was, 
+that all individual changes for different websites, will be made in the extension
+`af6passenger`, whereas nothing will be changed in this extension. Because of 
+that, the extension can be updated for all future websites, without having to 
+do it manually for each and every website.
+
+### All changes
+```
+[05.08.2023][feat] Make constants available for the constant editor
+[05.08.2023][chore] Add new root paths & move data processing to EXT:af6passenger
+[05.08.2023][chore] Move meta tags to EXT:af6passenger
+[05.08.2023][chore] Move custom JavaScript to EXT:af6passenger
+[05.08.2023][chore] Move certain pagets configurations to EXT:af6passenger
+[05.08.2023][chore] Move main RTE config to EXT:af6passenger
+[05.08.2023][chore] Move certain CSS to EXT:af6passenger
+[05.08.2023][chore] Update version number
+```

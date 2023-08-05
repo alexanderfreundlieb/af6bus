@@ -1,7 +1,3 @@
-page.includeJSFooter {
-  custom = EXT:af6bus/Resources/Public/JavaScript/script.js
-}
-
 # remove default jquery
 page {
   javascriptLibs {

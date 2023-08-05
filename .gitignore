@@ -39,16 +39,13 @@ typo3conf/.gitignore
 typo3conf/LocalConfiguration.php
 !typo3conf/PackageStates.php
 
-# just track af_custom, siteconfig & php config in typo3conf
+# just track siteconfig & php config in typo3conf
 # remove typo3conf/ext/
 /typo3conf/ext/*
 # remove typo3conf/autoload/
 /typo3conf/autoload/*
 # remove typo3conf/l10n/
 /typo3conf/l10n/*
-
-# add AF extension af_custom
-!/typo3conf/ext/af_*/
 
 # root .htaccess file
 /.htaccess

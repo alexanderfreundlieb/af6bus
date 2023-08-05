@@ -1,4 +1,82 @@
 /******************************************************
+ * Various functions
+ ******************************************************/
+@each $font in $fonts {
+    @import url($font);
+}
+
+@each $background-class, $background-color in $background-colors {
+    .background--#{$background-class} {
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            top: 0;
+            width: 100vw;
+            background-color: $background-color;
+            left: calc((100vw - 100%) / 2 * -1);
+        }
+
+        > * {
+            position: relative;
+            z-index: $zIndex-1--foreground;
+        }
+    }
+}
+
+/******************************************************
+ * Basis
+ ******************************************************/
+:root {
+    font-family: $font-family;
+    font-size: $font-size;
+    font-weight: $font-weight-normal;
+    line-height: $line-height;
+}
+
+body {
+    background-color: $main-background;
+    padding-top: $nav-height;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: $grid-max-width;
+    box-sizing: content-box;
+    padding: 0 calc(#{$grid-gap} / 2);
+    margin: 0 auto;
+}
+
+.anchor {
+    position: relative;
+    display: block;
+    z-index: -10;
+    visibility: hidden;
+    pointer-events: none;
+    top: -$nav-height;
+}
+
+/******************************************************
+ * Functional classes
+ ******************************************************/
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px
+}
+
+.primary-color {
+    color: $primary;
+}
+
+/******************************************************
  * Cols
  ******************************************************/
 .content {

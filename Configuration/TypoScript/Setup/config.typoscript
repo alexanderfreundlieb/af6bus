@@ -1,5 +1,5 @@
 config {
-  baseURL = {$baseURL}
+  baseURL = {$plugin.af6bus.baseURL}
   spamProtectEmailAddresses = 7
   spamProtectEmailAddresses_atSubst = (at)
   disablePrefixComment = 1

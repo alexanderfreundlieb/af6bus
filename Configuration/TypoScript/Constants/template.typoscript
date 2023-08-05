@@ -1,9 +1,17 @@
-homePid = 1
-baseURL = https://alexanderfreundlieb.ch/
-footerPid = 2
-metaPid = 4
-siteLogo = /fileadmin/files/images/logo.png
-onePage = true
+plugin.af6bus {
+  # cat=plugin.af6bus/file; type=int; Label=Homepage PID: Set the page ID of the homepage
+  homePid = 1
+  # cat=plugin.af6bus/file; type=int; Label=Footer PID: Set the page ID of the footer
+  footerPid = 2
+  # cat=plugin.af6bus/file; type=int; Label=Metafolder PID: Set the page ID of the folder containing the sites for the metanavigation
+  metaPid = 3
+  # cat=plugin.af6bus/enable; type=bool; Label= One Page Nav: Enable or disable the one page navigation
+  onePage = true
+  # cat=plugin.af6bus/file; type=string; Label=Site Logo: Set the path for the site logo
+  siteLogo = /fileadmin/files/images/logo.png
+  # cat=plugin.af6bus/links; type=string; Label=Base URL: Set the base URL of the website
+  baseURL = https://alexanderfreundlieb.ch/
+}
 
-cssBundlePath = EXT:af6bus/Resources/Public/CSS/src/bundle.scss
-cssOutputPath = EXT:af6bus/Resources/Public/CSS/dist/bundle.css
+cssBundlePath = EXT:af6passenger/Resources/Public/CSS/src/bundle.scss
+cssOutputPath = EXT:af6passenger/Resources/Public/CSS/dist/bundle.css

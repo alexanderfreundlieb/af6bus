@@ -5,7 +5,7 @@
  */
 $EM_CONF[$_EXTKEY] = [
     'title' => 'AF6Bus',
-    'description' => 'Main sitepackage used for all websites developed by Alexander Freundlieb',
+    'description' => 'Simple sitepackage, best used together with af6passenger',
     'category' => 'templates',
     'constraints' => [
         'depends' => [

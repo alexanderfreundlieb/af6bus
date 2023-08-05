@@ -1,7 +1,7 @@
 {
     "name": "alexander-freundlieb/af6bus",
     "type": "typo3-cms-extension",
-    "description": "Main sitepackage used for all websites developed by Alexander Freundlieb",
+    "description": "Simple sitepackage, best used together with af6passenger",
 	"authors": [
 		{
 			"name": "Alexander Freundlieb",

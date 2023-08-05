@@ -5,7 +5,7 @@
     <nav class="navigation">
         <ul class="navigation__list">
             <f:for each="{navigation}" as="item">
-                <f:if condition="{onePage} == 'true'">
+                <f:if condition="{onePage} == 1">
                     <f:then>
                         <f:render partial="Header/Navigation/ItemOnePage" arguments="{item:item}"/>
                     </f:then>

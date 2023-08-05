@@ -21,4 +21,4 @@ $iconRegistry->registerIcon(
 
 /*RTE Configs */
 // register RTE config
-$GLOBALS['TYPO3_CONF_VARS']['RTE']['Presets']['af6busRTE'] = 'EXT:af6bus/Configuration/RTE/af6busRTE.yaml';
+$GLOBALS['TYPO3_CONF_VARS']['RTE']['Presets']['af6busRTE'] = 'EXT:af6bus/Configuration/RTE/af6baseRTE.yaml';

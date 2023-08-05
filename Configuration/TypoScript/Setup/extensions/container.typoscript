@@ -1,19 +1,22 @@
 containerSetup < lib.contentElement
 containerSetup {
   layoutRootPaths {
-    10 = EXT:fluid_styled_content/Resources/Private/Layouts
-    20 = EXT:af6bus/Resources/Private/Extensions/fluid_styled_content/Layouts
-    30 = EXT:af6bus/Resources/Private/Extensions/container/Layouts
+    10 = EXT:fluid_styled_content/Resources/Private/Layouts/
+    20 = EXT:af6bus/Resources/Private/Extensions/fluid_styled_content/Layouts/
+    30 = EXT:af6bus/Resources/Private/Extensions/container/Layouts/
+    40 = EXT:af6passenger/Resources/Private/Extensions/container/Layouts/
   }
   templateRootPaths {
-    10 = EXT:fluid_styled_content/Resources/Private/Templates
-    20 = EXT:af6bus/Resources/Private/Extensions/fluid_styled_content/Templates
-    30 = EXT:af6bus/Resources/Private/Extensions/container/Templates
+    10 = EXT:fluid_styled_content/Resources/Private/Templates/
+    20 = EXT:af6bus/Resources/Private/Extensions/fluid_styled_content/Templates/
+    30 = EXT:af6bus/Resources/Private/Extensions/container/Templates/
+    40 = EXT:af6passenger/Resources/Private/Extensions/container/Templates/
   }
   partialRootPaths {
-    10 = EXT:fluid_styled_content/Resources/Private/Partials
-    20 = EXT:af6bus/Resources/Private/Extensions/fluid_styled_content/Partials
-    30 = EXT:af6bus/Resources/Private/Extensions/container/Partials
+    10 = EXT:fluid_styled_content/Resources/Private/Partials/
+    20 = EXT:af6bus/Resources/Private/Extensions/fluid_styled_content/Partials/
+    30 = EXT:af6bus/Resources/Private/Extensions/container/Partials/
+    40 = EXT:af6passenger/Resources/Private/Extensions/container/Partials/
   }
 
   dataProcessing {

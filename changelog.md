@@ -28,4 +28,5 @@ do it manually for each and every website.
 [05.08.2023][chore] Move main RTE config to EXT:af6passenger
 [05.08.2023][chore] Move certain CSS to EXT:af6passenger
 [05.08.2023][chore] Update version number
+[05.08.2023][feat] Add smooth scrolling
 ```

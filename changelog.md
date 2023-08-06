@@ -6,6 +6,7 @@ In this version the extension has been granted an icon.
 ### All changes
 ```
 [06.08.2023][chore] Add new extension icon
+[06.08.2023][chore] Update version number
 ```
 
 ## Version 2.0.1 - 6th August 2023

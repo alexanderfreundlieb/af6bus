@@ -1,5 +1,13 @@
 Changelog
 ==============================================================
+## Version 2.0.2 - 6th August 2023
+In this version the extension has been granted an icon.
+
+### All changes
+```
+[06.08.2023][chore] Add new extension icon
+```
+
 ## Version 2.0.1 - 6th August 2023
 This version contains some minor bug fixes. See below for a full list
 of all changes.

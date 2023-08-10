@@ -1,15 +1,21 @@
 Changelog
 ==============================================================
-## Version 2.0.2 - 10th August 2023
-In this version the extension has been granted an icon. There were some changes
-made to the navigation templates to allow for mobile compatibility out of
-the box.
+## Version 2.1.0 - 10th August 2023
+There were some changes made to the navigation templates to allow for 
+mobile compatibility out of the box.
+
+### All changes
+```
+[10.08.2023][feat] Adjust nav templates for mobile - Resolves #5
+```
+
+## Version 2.0.2 - 6th August 2023
+In this version the extension has been granted an icon.
 
 ### All changes
 ```
 [06.08.2023][chore] Add new extension icon
 [06.08.2023][chore] Update version number
-[10.08.2023][feat] Adjust nav templates for mobile - Resolves #5
 ```
 
 ## Version 2.0.1 - 6th August 2023

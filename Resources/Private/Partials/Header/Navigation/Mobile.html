@@ -2,13 +2,13 @@
       data-namespace-typo3-fluid="true">
 
 <f:if condition="{navigation}">
-    <div class="navigation__mobile__burger">
-        <span class="navigation__mobile__burger__bar"></span>
-        <span class="navigation__mobile__burger__bar"></span>
-        <span class="navigation__mobile__burger__bar"></span>
-    </div>
-    <div class="navigation__mobile__nav__wrap">
-        <nav class="navigation__mobile__nav">
+    <nav class="navigation__mobile__nav">
+        <div class="navigation__mobile__burger">
+            <input type="checkbox" class="navigation__mobile__burger--input" />
+            <span class="navigation__mobile__burger__bar"></span>
+            <span class="navigation__mobile__burger__bar"></span>
+            <span class="navigation__mobile__burger__bar"></span>
+
             <ul class="navigation__mobile__list">
                 <f:for each="{navigation}" as="item">
                     <f:if condition="{onePage} == 1">
@@ -20,9 +20,10 @@
                         </f:else>
                     </f:if>
                 </f:for>
+                <f:render partial="Header/Navigation/Meta" arguments="{navigation:navigationMeta,pid:pid}" />
             </ul>
-        </nav>
-    </div>
+        </div>
+    </nav>
 </f:if>
 
 </html>

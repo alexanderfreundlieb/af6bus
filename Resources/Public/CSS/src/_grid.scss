@@ -64,7 +64,7 @@ body {
     z-index: -10;
     visibility: hidden;
     pointer-events: none;
-    top: -$nav-height;
+    top: calc(-#{$nav-height} - #{$grid-gap});
 }
 
 /******************************************************

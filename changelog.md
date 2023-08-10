@@ -7,6 +7,7 @@ mobile compatibility out of the box.
 ### All changes
 ```
 [10.08.2023][feat] Adjust nav templates for mobile - Resolves #5
+[10.08.2023][style] Move anchor further up
 ```
 
 ## Version 2.0.2 - 6th August 2023

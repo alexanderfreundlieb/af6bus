@@ -10,6 +10,7 @@ changes.
 [10.08.2023][feat] Adjust nav templates for mobile - Resolves #5
 [10.08.2023][style] Move anchor further up
 [10.08.2023][chore] Add additional one-page identifier
+[10.08.2023][chore] Update version number
 ```
 
 ## Version 2.0.2 - 6th August 2023

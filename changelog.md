@@ -1,5 +1,18 @@
 Changelog
 ==============================================================
+## Version 2.1.0 - 10th August 2023
+There were some changes made to the navigation templates to allow for 
+mobile compatibility out of the box, as well as some other minor styling 
+changes.
+
+### All changes
+```
+[10.08.2023][feat] Adjust nav templates for mobile - Resolves #5
+[10.08.2023][style] Move anchor further up
+[10.08.2023][chore] Add additional one-page identifier
+[10.08.2023][chore] Update version number
+```
+
 ## Version 2.0.2 - 6th August 2023
 In this version the extension has been granted an icon.
 

@@ -23,6 +23,3 @@ using this extension or run ```composer require alexander-freundlieb/af6passenge
 if you plan on both using this extension as well as [af6passenger](https://github.com/alexanderfreundlieb/af6passenger/)
 * Include the TypoScript in your TYPO3 Installation
 * Set the needed TypoScript constants
-
-## TODO
-- [ ] Banner backend preview

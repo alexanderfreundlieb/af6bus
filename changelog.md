@@ -2,7 +2,8 @@ Changelog
 ==============================================================
 ## Version 2.1.0 - 10th August 2023
 There were some changes made to the navigation templates to allow for 
-mobile compatibility out of the box.
+mobile compatibility out of the box, as well as some other minor styling 
+changes.
 
 ### All changes
 ```

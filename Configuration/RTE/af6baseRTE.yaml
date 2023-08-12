@@ -5,7 +5,8 @@ imports:
 
 editor:
   config:
-    contentsCss: "EXT:af6bus/Resources/Public/CSS/dist/rte.css"
+    contentsCss:
+      - 'EXT:af6passenger/Resources/Public/CSS/dist/rte.css'
 
     heading:
       options:

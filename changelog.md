@@ -1,5 +1,13 @@
 Changelog
 ==============================================================
+## Version TBD - 12th August 2023
+TBD
+
+### All changes
+```
+[12.08.2023][fix] Set correct nav link - Fixes #8
+```
+
 ## Version 2.1.0 - 10th August 2023
 There were some changes made to the navigation templates to allow for 
 mobile compatibility out of the box, as well as some other minor styling 

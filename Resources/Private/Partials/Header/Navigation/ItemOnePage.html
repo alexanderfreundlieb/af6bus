@@ -2,8 +2,9 @@
       data-namespace-typo3-fluid="true">
 
 <li class="navigation__item navigation__item--one-page">
-    <f:link.typolink
-        parameter="#c{item.data.uid}"
+    <f:link.page
+        pageUid="{item.data.pid}"
+        section="c{item.data.uid}"
         title="{f:if(condition:'{item.data.nav_use_subtitle} == 0', then:' {item.data.header}', else:' {item.data.subheader}')}"
         class="navigation__link">
         <f:if condition="{item.files}">
@@ -15,7 +16,7 @@
                 <f:else>{item.data.subheader}</f:else>
             </f:if>
         </span>
-    </f:link.typolink>
+    </f:link.page>
 </li>
 
 </html>

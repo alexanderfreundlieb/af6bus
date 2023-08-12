@@ -1,0 +1,12 @@
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+    public: false
+  AlexanderFreundlieb\Af6bus\:
+    resource: '../Classes/*'
+
+  AlexanderFreundlieb\Af6bus\Backend\EventListener\PreviewRenderer:
+    tags:
+      - name: event.listener
+        identifier: 'af6bus/preview-renderer'

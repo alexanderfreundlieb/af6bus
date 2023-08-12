@@ -7,6 +7,7 @@ TBD
 ```
 [12.08.2023][fix] Set correct nav link - Fixes #8
 [12.08.2023][feat] Add backend preview for banner - Resolves #6
+[12.08.2023][fix] Set correct rte css path
 ```
 
 ## Version 2.1.0 - 10th August 2023

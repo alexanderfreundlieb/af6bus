@@ -1,13 +1,14 @@
 Changelog
 ==============================================================
-## Version TBD - 12th August 2023
-TBD
+## Version 2.2.0 - 12th August 2023
+Add backend preview for banner and fix some small issues
 
 ### All changes
 ```
 [12.08.2023][fix] Set correct nav link - Fixes #8
 [12.08.2023][feat] Add backend preview for banner - Resolves #6
 [12.08.2023][fix] Set correct rte css path
+[12.08.2023][chore] Update version number
 ```
 
 ## Version 2.1.0 - 10th August 2023

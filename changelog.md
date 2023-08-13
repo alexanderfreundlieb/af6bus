@@ -1,5 +1,13 @@
 Changelog
 ==============================================================
+## Version 2.3.0 - 13th August 2023
+Update textmedia content element output
+
+### All changes
+```
+[13.08.2023][feat] Add new backend field vertical alignment
+```
+
 ## Version 2.2.0 - 12th August 2023
 Add backend preview for banner and fix some small issues
 

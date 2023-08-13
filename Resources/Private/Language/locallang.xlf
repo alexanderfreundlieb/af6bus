@@ -64,6 +64,19 @@
 				<source>Black background</source>
 			</trans-unit>
 
+			<trans-unit id="tca.af6bus.vertical_align">
+				<source>Vertical alignment</source>
+			</trans-unit>
+			<trans-unit id="tca.af6bus.vertical_align.top">
+				<source>Top</source>
+			</trans-unit>
+			<trans-unit id="tca.af6bus.vertical_align.center">
+				<source>Center</source>
+			</trans-unit>
+			<trans-unit id="tca.af6bus.vertical_align.bottom">
+				<source>Bottom</source>
+			</trans-unit>
+
 			<trans-unit id="tca.container.2col">
 				<source>2 columns</source>
 			</trans-unit>

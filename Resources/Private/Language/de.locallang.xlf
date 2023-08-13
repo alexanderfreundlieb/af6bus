@@ -83,6 +83,23 @@
 				<target>Schwarzer Hintergrund</target>
 			</trans-unit>
 
+			<trans-unit id="tca.af6bus.vertical_align">
+				<source>Vertical alignment</source>
+				<target>Vertikale Ausrichtung</target>
+			</trans-unit>
+			<trans-unit id="tca.af6bus.vertical_align.top">
+				<source>Top</source>
+				<target>Oben</target>
+			</trans-unit>
+			<trans-unit id="tca.af6bus.vertical_align.center">
+				<source>Center</source>
+				<target>Mitte</target>
+			</trans-unit>
+			<trans-unit id="tca.af6bus.vertical_align.bottom">
+				<source>Bottom</source>
+				<target>Unten</target>
+			</trans-unit>
+
 			<trans-unit id="tca.container.2col">
 				<source>2 columns</source>
 				<target>2 Spalten</target>

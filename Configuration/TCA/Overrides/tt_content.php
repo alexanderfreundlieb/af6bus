@@ -79,6 +79,25 @@ $GLOBALS['TCA']['tt_content']['types']['af6bus_banner']['columnsOverrides'] = ar
                 ],
             ],
         ],
+        'vertical_align' => [
+            'exclude' => 0,
+            'label' => 'LLL:EXT:af6bus/Resources/Private/Language/locallang.xlf:tca.af6bus.vertical_align',
+            'config' => [
+                'type' => 'select',
+                'renderType' => 'selectSingle',
+                'items' => [
+                    [
+                        'label' => 'LLL:EXT:af6bus/Resources/Private/Language/locallang.xlf:tca.af6bus.vertical_align.top', 'value' => 'top',
+                    ],
+                    [
+                    'label' => 'LLL:EXT:af6bus/Resources/Private/Language/locallang.xlf:tca.af6bus.vertical_align.center', 'value' => 'center',
+                    ],
+                    [
+                        'label' => 'LLL:EXT:af6bus/Resources/Private/Language/locallang.xlf:tca.af6bus.vertical_align.bottom', 'value' => 'bottom',
+                    ]
+                ],
+            ],
+        ]
     ]
 );
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addFieldsToPalette(
@@ -92,6 +111,12 @@ $GLOBALS['TCA']['tt_content']['types']['af6bus_banner']['columnsOverrides'] = ar
     'frames',
     '--linebreak--,background',
     'after:space_after_class'
+);
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addFieldsToPalette(
+    'tt_content',
+    'gallerySettings',
+    '--linebreak--,vertical_align',
+    'after:imagecols'
 );
 
 /*** Container ***/

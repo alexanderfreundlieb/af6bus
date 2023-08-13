@@ -2,9 +2,7 @@
 <f:layout name="Default" />
 <f:section name="Header">
 
-    <f:if condition="{gallery.position.noWrap} != 1">
-        <f:render partial="Header/All" arguments="{_all}" />
-    </f:if>
+    <f:render partial="Header/All" arguments="{_all}" />
 
 </f:section>
 <f:section name="Main">
@@ -17,21 +15,9 @@
         <f:if condition="{data.bodytext}">
             <f:then>
                 <div class="ce-bodytext{f:if(condition: gallery.position.noWrap, then: ' col8 col-medium-6 col-small-12')}">
-                    <f:if condition="{gallery.position.noWrap}">
-                        <f:render partial="Header/All" arguments="{_all}" />
-                    </f:if>
                     <f:format.html>{data.bodytext}</f:format.html>
                 </div>
             </f:then>
-            <f:else>
-                <f:if condition="{gallery.position.noWrap}">
-                    <f:if condition="{data.header}">
-                        <div class="ce-bodytext{f:if(condition: gallery.position.noWrap, then: ' col8 col-medium-6 col-small-12')}">
-                            <f:render partial="Header/All" arguments="{_all}" />
-                        </div>
-                    </f:if>
-                </f:if>
-            </f:else>
         </f:if>
 
         <f:if condition="{gallery.position.vertical} == 'below'">

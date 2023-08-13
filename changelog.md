@@ -6,6 +6,7 @@ Update textmedia content element output
 ### All changes
 ```
 [13.08.2023][feat] Add new backend field vertical alignment
+[13.08.2023][feat] Update textmedia template
 ```
 
 ## Version 2.2.0 - 12th August 2023
